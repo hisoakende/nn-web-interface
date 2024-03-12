@@ -4,3 +4,6 @@
 [submodule "nn-models"]
 	path = nn-models
 	url = git@github.com:hisoakende/nn-models.git
+[submodule "nn-results"]
+	path = nn-results
+	url = git@github.com:hisoakende/nn-results.git
