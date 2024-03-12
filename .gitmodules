@@ -7,3 +7,6 @@
 [submodule "nn-results"]
 	path = nn-results
 	url = git@github.com:hisoakende/nn-results.git
+[submodule "nn-general"]
+	path = nn-general
+	url = git@github.com:hisoakende/nn-general.git
