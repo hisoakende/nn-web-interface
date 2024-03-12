@@ -1,3 +1,6 @@
 [submodule "nn-frontend"]
 	path = nn-frontend
 	url = git@github.com:hisoakende/nn-frontend.git
+[submodule "nn-models"]
+	path = nn-models
+	url = git@github.com:hisoakende/nn-models.git
