@@ -1,5 +1,8 @@
 version: '3.8'
 
 services:
-  models:
-    image: ${MODELS_IMAGE}
+  nn-frontend:
+    image: ${NN_FRONTEND_IMAGE}
+
+  nn-models:
+    image: ${NN_MODELS_IMAGE}
