@@ -6,3 +6,6 @@ services:
 
   nn-models:
     image: ${NN_MODELS_IMAGE}
+
+  nn-results:
+    image: ${NN_RESULTS_IMAGE}

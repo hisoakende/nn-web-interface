@@ -6,11 +6,22 @@ services:
     depends_on:
       nn-models:
         condition: service_healthy
+      nn-results:
+        condition: service_healthy
 
   nn-models:
     restart: always
     healthcheck:
       test: wget --no-verbose --tries=1 --spider http://localhost:8000/_health || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  nn-results:
+    restart: always
+    healthcheck:
+      test: wget --no-verbose --tries=1 --spider http://localhost:8080/_health || exit 1
       interval: 10s
       timeout: 5s
       retries: 5

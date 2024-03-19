@@ -6,3 +6,6 @@ services:
 
   nn-models:
     build: ./nn-models
+
+  nn-results:
+    build: ./nn-results
